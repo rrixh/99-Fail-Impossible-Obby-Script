@@ -70,19 +70,9 @@ for _, A_1 in next, Tiles:GetDescendants() do
     end
 end
 
---// UI Library \\--
+--// nolib Library \\--
 local Library = loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/Just-Egg-Salad/roblox-scripts/main/uwuware'))()
-local Window = Library:CreateWindow("Memory by Ezpi")
-Window:AddButton({
-    text = "Clear Colors",
-    callback = function()
-        for _, A_1 in next, Tiles:GetDescendants() do
-            if A_1:IsA("BasePart") then
-                A_1.Color = Original
-            end
-        end
-    end
-})
+
 Library:Init()
 
 
